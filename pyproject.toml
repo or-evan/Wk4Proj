@@ -8,10 +8,12 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "cfgrib>=0.9.15.1",
     "ipykernel>=7.4.0",
     "matplotlib>=3.11.2",
     "numpy>=2.5.4",
     "torch>=2.14.1",
+    "xarray>=2026.9.0",
 ]
 
 [project.scripts]
