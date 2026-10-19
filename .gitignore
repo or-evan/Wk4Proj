@@ -11,3 +11,6 @@ wheels/
 
 data/*
 *.png
+*.gif
+*.zip
+*.mp4

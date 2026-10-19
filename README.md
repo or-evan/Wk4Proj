@@ -119,3 +119,20 @@ Set the same `seed` on each machine before constructing the model. This makes
 the Python, NumPy, PyTorch, CUDA, and data-loader randomness repeatable.
 PyTorch can still produce small differences across different hardware,
 driver, or library versions.
+
+## Create presentation animations
+
+With the project environment installed, run:
+
+```powershell
+uv run python scripts/create_sst_anomaly_gif.py
+```
+
+This creates a high-resolution `pacific_sst_anomaly.mp4` and a smaller
+`pacific_sst_anomaly.gif` in the project root. Both show a clean, white-background
+monthly animation of Pacific SST anomalies from 2010 through 2016 with a moving
+`YYYY-MM` date label and a compact colour bar; the map is cropped to the data
+extent so no blank bands remain. The MP4 is
+recommended for PowerPoint because it preserves better image quality at a
+smaller file size; set its playback to **Start Automatically** in PowerPoint.
+Override paths with `--input`, `--gif-output`, or `--video-output`.
